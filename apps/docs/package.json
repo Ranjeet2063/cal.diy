@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next --turbopack",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node init && next --turbopack",
+    "build": "node init && next build",
+    "start": "node init && next start"
   },
   "dependencies": {
     "next": "^15.1.0",
