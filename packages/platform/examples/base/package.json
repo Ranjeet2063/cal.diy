@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev:e2e": "PORT=4322 next dev",
-    "dev": "PORT=4321 next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev:e2e": "node init && PORT=4322 next dev",
+    "dev": "node init && PORT=4321 next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
     "@calcom/atoms": "workspace:*",
     "@prisma/client": "6.16.1",
-    "next": "16.1.5",
+    "next": "16.2.3",
     "prisma": "6.16.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
